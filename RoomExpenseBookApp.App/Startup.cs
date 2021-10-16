@@ -1,13 +1,19 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using RoomExpenseBookApp.Entities.DataBaseContext;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
+using RoomExpenseBookApp.Entities.Utilities;
+using RoomExpenseBookApp.Service.UserServices;
+using RoomExpenseBookApp.DataAccess.UserAccess;
 
 namespace RoomExpenseBookApp.App
 {
@@ -24,6 +30,19 @@ namespace RoomExpenseBookApp.App
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddScoped<IUserService, UserService>();
+            services.AddScoped<IUserDataAccess, UserDataAccess>();
+            services.AddScoped<RoomExpenseBook_DbContext>();
+            // Auto Mapper Configurations
+            var mapperConfig = new MapperConfiguration(mc =>
+            {
+                mc.AddProfile(new AutoMapperConfiguration());
+            });
+
+            IMapper mapper = mapperConfig.CreateMapper();
+            services.AddSingleton(mapper);
+
+            //services.AddDbContext<RoomExpenseBook_DbContext>(options => options.UseNpgsql(Configuration.GetSection("DataBaseConnection").Value));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

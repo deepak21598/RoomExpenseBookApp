@@ -12,7 +12,8 @@
       "commandName": "IISExpress",
       "launchBrowser": true,
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "DataBaseConnection": "Host=ec2-18-214-214-252.compute-1.amazonaws.com;Database=d10fv2k00uqrc7;Username=ylaqknjrpfuajq;Password=5d93f1bc533de487af7f1a96a40684ad457646dcca404cde61823d0ffac402fc;SSL Mode=Require;Trust Server Certificate=true"
       }
     },
     "RoomExpenseBookApp.App": {

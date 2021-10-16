@@ -9,11 +9,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataAccess", "DataAccess", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{C5B00EF6-9AF6-46F6-966F-4650C7E4550E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoomExpenseBookApp.DataAccess", "RoomExpenseBookApp.DataAccess\RoomExpenseBookApp.DataAccess.csproj", "{F62244D9-7C36-4B48-B97F-115DA9CE216D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RoomExpenseBookApp.DataAccess", "RoomExpenseBookApp.DataAccess\RoomExpenseBookApp.DataAccess.csproj", "{F62244D9-7C36-4B48-B97F-115DA9CE216D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoomExpenseBookApp.Service", "RoomExpenseBookApp.Service\RoomExpenseBookApp.Service.csproj", "{719C06CB-38A8-4C97-AA5A-102F7F5D488C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RoomExpenseBookApp.Service", "RoomExpenseBookApp.Service\RoomExpenseBookApp.Service.csproj", "{719C06CB-38A8-4C97-AA5A-102F7F5D488C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoomExpenseBookApp.App", "RoomExpenseBookApp.App\RoomExpenseBookApp.App.csproj", "{7448F84D-3720-46F0-85AB-AC27D028F893}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RoomExpenseBookApp.App", "RoomExpenseBookApp.App\RoomExpenseBookApp.App.csproj", "{7448F84D-3720-46F0-85AB-AC27D028F893}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RoomExpenseBookApp.Entities", "RoomExpenseBookApp.Entities\RoomExpenseBookApp.Entities.csproj", "{DEF8AF41-16EC-4D7D-B0CA-B9CDFD6E117F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Entities", "Entities", "{A8A66611-1F57-4E9F-B15D-476FA85280BC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,10 @@ Global
 		{7448F84D-3720-46F0-85AB-AC27D028F893}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7448F84D-3720-46F0-85AB-AC27D028F893}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7448F84D-3720-46F0-85AB-AC27D028F893}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEF8AF41-16EC-4D7D-B0CA-B9CDFD6E117F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEF8AF41-16EC-4D7D-B0CA-B9CDFD6E117F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEF8AF41-16EC-4D7D-B0CA-B9CDFD6E117F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEF8AF41-16EC-4D7D-B0CA-B9CDFD6E117F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -41,6 +49,7 @@ Global
 		{F62244D9-7C36-4B48-B97F-115DA9CE216D} = {40FE9033-CDCC-40D2-8409-837C167EAF24}
 		{719C06CB-38A8-4C97-AA5A-102F7F5D488C} = {C5B00EF6-9AF6-46F6-966F-4650C7E4550E}
 		{7448F84D-3720-46F0-85AB-AC27D028F893} = {9E179D81-4286-4DC1-9534-7BB3A629D592}
+		{DEF8AF41-16EC-4D7D-B0CA-B9CDFD6E117F} = {A8A66611-1F57-4E9F-B15D-476FA85280BC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DAC5E176-F260-4BA9-8489-18B78AE815A1}

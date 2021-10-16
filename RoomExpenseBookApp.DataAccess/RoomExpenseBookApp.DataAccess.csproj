@@ -5,8 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="DataBaseContext\" />
-    <Folder Include="Entities\Models\" />
+    <ProjectReference Include="..\RoomExpenseBookApp.Entities\RoomExpenseBookApp.Entities.csproj" />
   </ItemGroup>
 
 </Project>
